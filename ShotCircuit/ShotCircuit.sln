@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32811.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShotCircuit", "ShotCircuit.csproj", "{B71E54C2-AB34-4E21-B88C-D94F0E303FAC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B71E54C2-AB34-4E21-B88C-D94F0E303FAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B71E54C2-AB34-4E21-B88C-D94F0E303FAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B71E54C2-AB34-4E21-B88C-D94F0E303FAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B71E54C2-AB34-4E21-B88C-D94F0E303FAC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B3BCFA62-3F9B-4027-AE48-012D730E0A7A}
+	EndGlobalSection
+EndGlobal
