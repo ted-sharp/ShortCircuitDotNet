@@ -14,5 +14,17 @@ namespace ShortCircuit.Extensions
         {
             return o ?? Enumerable.Empty<T>();
         }
+
+        public static IEnumerable<T> ForEarch<T>(this IEnumerable<T>? o, Action<T> action)
+        {
+            foreach (var item in o)
+            {
+                action(item);
+            }
+
+            return o;
+        }
+
+
     }
 }
