@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ShotCircuit.Extensions
+namespace ShortCircuit.Extensions
 {
     public static class IDictionaryExtensions
     {

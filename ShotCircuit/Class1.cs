@@ -1,4 +1,4 @@
-﻿namespace ShotCircuit
+﻿namespace ShortCircuit
 {
     public class Class1
     {

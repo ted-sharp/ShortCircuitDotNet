@@ -5,7 +5,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ShotCircuit.Extensions.StringExtensionsToDateTime
+namespace ShortCircuit.Extensions.StringExtensionsToDateTime
 {
     public static class StringExtensions
     {

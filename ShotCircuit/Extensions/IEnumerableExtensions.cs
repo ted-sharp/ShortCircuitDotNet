@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ShotCircuit.Extensions
+namespace ShortCircuit.Extensions
 {
     // IEnumerable は　GetEnumerator() を持ち foreach を回すだけ。
     public static class IEnumerableExtensions
