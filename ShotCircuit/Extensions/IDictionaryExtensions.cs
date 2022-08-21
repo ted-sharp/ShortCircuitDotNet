@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace ShortCircuit.Extensions
 {
+    // ICollection, IEnumerableを含む
     public static class IDictionaryExtensions
     {
         public static bool TryGetKey<TKey, TValue>(

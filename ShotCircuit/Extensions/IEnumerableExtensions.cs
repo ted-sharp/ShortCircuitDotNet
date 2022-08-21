@@ -25,6 +25,10 @@ namespace ShortCircuit.Extensions
             return o;
         }
 
+        public static IEnumerable<IEnumerable<T>> Chunk<T>(this IEnumerable<T>? o, int length)
+        {
+            throw new NotImplementedException();
+        }
 
     }
 }

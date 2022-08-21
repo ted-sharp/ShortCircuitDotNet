@@ -9,6 +9,7 @@ namespace ShortCircuit.Extensions.StringExtensionsIsCharacters
 {
     public static class StringExtensions
     {
+        // AsSpan も使う
         public static bool IsAscii(this String o)
         {
             throw new NotImplementedException();

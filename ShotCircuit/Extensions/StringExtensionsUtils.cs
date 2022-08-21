@@ -19,5 +19,11 @@ namespace ShortCircuit.Extensions
             var result = (o != null && o.Length > length) ? o[^length..] : o;
             return result ?? "";
         }
+
+        // Humanizerっぽく
+        public static string Truncate(this string o, int length)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
