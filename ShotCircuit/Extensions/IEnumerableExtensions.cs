@@ -9,6 +9,20 @@ namespace ShortCircuit.Extensions
     // IEnumerable は　GetEnumerator() を持ち foreach を回すだけ。
     public static class IEnumerableExtensions
     {
+        public static bool IsNullOrEmpty<T>(this IEnumerable<T>? o)
+        {
+            if (o == null)
+            {
+                return true;
+            }
+
+            if (o is ICollection<T> collection)
+            {
+                return collection.IsNullOrEmpty();
+            }
+
+            return (o == null) || (!o.Any());
+        }
 
         public static IEnumerable<T> OrEmpty<T>(this IEnumerable<T>? o)
         {
@@ -20,6 +34,7 @@ namespace ShortCircuit.Extensions
             foreach (var item in o)
             {
                 action(item);
+                //action.Invoke(item);
             }
 
             return o;
@@ -30,5 +45,15 @@ namespace ShortCircuit.Extensions
             throw new NotImplementedException();
         }
 
+        public static bool IsSingle<T>(this IEnumerable<T> o)
+        {
+            if (o == null)
+            {
+                return false;
+            }
+
+            using var enumerator = o.GetEnumerator();
+            return enumerator.MoveNext() && !enumerator.MoveNext();
+        }
     }
 }

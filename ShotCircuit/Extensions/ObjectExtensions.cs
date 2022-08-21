@@ -20,5 +20,17 @@ namespace ShortCircuit.Extensions
             stream.Position = 0;
             return (T)formatter.Deserialize(stream);
         }
+
+        // this を nullable にしていないと評価されない？(要確認)
+        public static bool In<T>(this T? o, params T[] items)
+        {
+            return (o != null) && items.Contains(o);
+        }
+
+        public static T Or<T>(this T? o, T value)
+        {
+            return (o == null) ? value : o;
+        }
+
     }
 }
