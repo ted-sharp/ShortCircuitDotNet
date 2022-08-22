@@ -35,6 +35,11 @@ namespace ShortCircuit.Extensions
             return result ?? "";
         }
 
+        public static string Indent(this string o, int length, char c = ' ')
+        {
+            throw new NotImplementedException();
+        }
+
         // Humanizerっぽく
         public static string Truncate(this string o, int length)
         {
