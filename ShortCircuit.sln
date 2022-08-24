@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShortCircuit.Db", "ShortCir
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShortCircuit.Db.Npgsql", "ShortCircuit.Db.Npgsql\ShortCircuit.Db.Npgsql.csproj", "{9EEAF26A-2C83-4749-B6BA-4FECCE346C7C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShortCircuitTest", "Tests\ShortCircuitTest\ShortCircuitTest.csproj", "{FBC2DB4D-C2B2-4770-8ADC-7FB2213D4CF4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{D12029D7-4DF3-4927-94E8-BF6C402BF026}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,9 +49,16 @@ Global
 		{9EEAF26A-2C83-4749-B6BA-4FECCE346C7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EEAF26A-2C83-4749-B6BA-4FECCE346C7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EEAF26A-2C83-4749-B6BA-4FECCE346C7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBC2DB4D-C2B2-4770-8ADC-7FB2213D4CF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBC2DB4D-C2B2-4770-8ADC-7FB2213D4CF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBC2DB4D-C2B2-4770-8ADC-7FB2213D4CF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBC2DB4D-C2B2-4770-8ADC-7FB2213D4CF4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FBC2DB4D-C2B2-4770-8ADC-7FB2213D4CF4} = {D12029D7-4DF3-4927-94E8-BF6C402BF026}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B3BCFA62-3F9B-4027-AE48-012D730E0A7A}
