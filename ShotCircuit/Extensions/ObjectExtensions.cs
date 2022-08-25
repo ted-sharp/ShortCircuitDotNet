@@ -21,16 +21,15 @@ namespace ShortCircuit.Extensions
             return (T)formatter.Deserialize(stream);
         }
 
-        // this を nullable にしていないと評価されない？(要確認)
-        public static bool In<T>(this T? o, params T[] items)
-        {
-            return (o != null) && items.Contains(o);
-        }
+        public static bool In<T>(this T? o, params T[] items) => (o != null) && items.Contains(o);
 
-        public static T Or<T>(this T? o, T value)
-        {
-            return (o == null) ? value : o;
-        }
+        public static bool In<T>(this T? o, IEnumerable<T> items) => (o != null) && items.Contains(o);
+
+        public static bool In<T>(this T? o, HashSet<T> vals) => (o != null) && vals.Contains(o);
+
+        public static bool In(this char? o, string s) => (o != null) && s.IndexOf(o.Value) > -1;
+
+        public static T Or<T>(this T? o, T value) => (o == null) ? value : o;
 
     }
 }
