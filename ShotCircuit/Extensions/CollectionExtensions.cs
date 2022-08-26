@@ -6,19 +6,27 @@ using System.Threading.Tasks;
 
 namespace ShortCircuit.Extensions
 {
-    // ICollectionは要素のカウントや追加削除ができる
-    // IEnumerableを含む
+    /// <summary>
+    /// <see cref="ICollection{T}"/> は要素のカウント、追加、削除を定義しています。
+    /// <see cref="IEnumerable{T}"/> を継承しています。
+    /// </summary>
     public static class CollectionExtensions
     {
-        public static bool IsNullOrEmpty<T>(this ICollection<T>? o)
-        {
-            return (o == null) || (o.Count == 0);
-        }
+        /// <summary>
+        /// null または空か判別します。
+        /// </summary>
+        /// <remarks>
+        /// <see cref="IEnumerable{T}"/> では LINQ の Any() で評価されるため、より低速です。
+        /// </remarks>
+        public static bool IsNullOrEmpty<T>(this ICollection<T>? o) => (o == null) || (o.Count == 0);
 
-        public static bool AddRange<T>(this ICollection<T> o)
+        /// <summary>
+        /// 複数の要素を追加します。
+        /// </summary>
+        public static ICollection<T> AddRange<T>(this ICollection<T> o, ICollection<T> items)
         {
-            throw new NotImplementedException();
+            items.ForEarch(x => o.Add(x));
+            return o;
         }
-
     }
 }
