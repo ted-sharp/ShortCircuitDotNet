@@ -8,7 +8,7 @@ namespace ShortCircuit.Extensions
 {
     // ICollectionは要素のカウントや追加削除ができる
     // IEnumerableを含む
-    public static class ICollectionExtensions
+    public static class CollectionExtensions
     {
         public static bool IsNullOrEmpty<T>(this ICollection<T>? o)
         {

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace ShortCircuit.Extensions
 {
     // IEnumerable は　GetEnumerator() を持ち foreach を回すだけ。
-    public static class IEnumerableExtensions
+    public static class EnumerableExtensions
     {
         public static bool IsNullOrEmpty<T>(this IEnumerable<T>? o)
         {

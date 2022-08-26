@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace ShortCircuit.Extensions
 {
     // https://gist.github.com/ufcpp/2b3e1a5821169f6b21ded175ad05c752
-    public static class IReadOnlyListExtensions
+    public static class ReadOnlyListExtensions
     {
         public struct IndexedListEnumerable<T> : IEnumerable<(T item, int index)>
         {
