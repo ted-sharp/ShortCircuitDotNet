@@ -1,4 +1,7 @@
-﻿namespace ShortCircuit.Logging
+﻿using System.Diagnostics;
+using System.Runtime.CompilerServices;
+
+namespace ShortCircuit.Logging
 {
     public static class Log
     {
@@ -9,10 +12,19 @@
         // Androidっぽいのがタイプ数が少なくて便利そうだった
         public static void D()
         {
-            // メソッドの呼び出し位置やファイル名なども含めたい
             // Loggerとは別にデバッグ出力にも出したい
             throw new NotImplementedException();
         }
+
+        public static void D(string message,
+            [CallerMemberName] string memberName = "",
+            [CallerFilePath] string sourceFilePath = "",
+            [CallerLineNumber] int sourceLineNumber = 0)
+        {
+            // メソッドの呼び出し位置やファイル名なども含めたい
+            //[CallerArgumentExpression(nameof(aaaaa))]
+        }
+
 
         // キューで処理できるようにしたい
         // ウォッチドッグ
