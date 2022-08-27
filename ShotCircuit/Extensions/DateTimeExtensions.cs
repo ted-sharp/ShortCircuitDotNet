@@ -24,5 +24,14 @@ namespace ShortCircuit.Extensions
             var date = o.Date;
             return date.AddMonths(1).AddDays(-date.Day);
         }
+
+        /// <summary>
+        /// 次の期末を返します。
+        /// </summary>
+        public static DateTime EndOfTerm(this DateTime o, int month, int day)
+        {
+            var baseDate = new DateTime(o.Year, month, day);
+            return (o > baseDate) ? baseDate.AddYears(1) : baseDate;
+        }
     }
 }

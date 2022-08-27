@@ -28,5 +28,13 @@ namespace ShortCircuitTest
         {
             Assert.That(date.EndOfMonth(), Is.EqualTo(result));
         }
+
+        [TestCase("2000-01-01", 3, 31, "2000-03-31")]
+        [TestCase("2000-12-31", 3, 31, "2001-03-31")]
+        [TestCase("2001-01-01", 3, 31, "2001-03-31")]
+        public void EndOfTerm(DateTime date, int month, int day, DateTime result)
+        {
+            Assert.That(date.EndOfTerm(month, day), Is.EqualTo(result));
+        }
     }
 }
