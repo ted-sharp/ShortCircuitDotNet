@@ -8,11 +8,21 @@ namespace ShortCircuit.Extensions
 {
     public static class DateTimeExtensions
     {
-        public static bool IsBetween(this DateTime o, DateTime startInclude, DateTime endExclude)
+        /// <summary>
+        /// 月初(1日)を返します。
+        /// </summary>
+        public static DateTime BeginningOfMonth(this DateTime o)
         {
-            throw new NotImplementedException();
+            return new DateTime(o.Year, o.Month, 1);
         }
-        
-        // 月末を取得するのもよく使うかも
+
+        /// <summary>
+        /// 月末(28-31日)を返します。
+        /// </summary>
+        public static DateTime EndOfMonth(this DateTime o)
+        {
+            var date = o.Date;
+            return date.AddMonths(1).AddDays(-date.Day);
+        }
     }
 }
