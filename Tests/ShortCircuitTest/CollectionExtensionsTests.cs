@@ -31,7 +31,6 @@ namespace ShortCircuitTest
             Assert.IsFalse(collection.IsNullOrEmpty());
         }
 
-
         [Test]
         public void AddRange_Added3Items_CountIs3()
         {

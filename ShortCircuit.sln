@@ -9,13 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShortCircuit.Logging", "Sho
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShortCircuit.FoDicom", "ShortCircuit.FoDicom\ShortCircuit.FoDicom.csproj", "{16E9B205-E023-49BB-9896-0F67B7CBF3F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShortCircuit.Logging.NLog", "ShortCircuit.Logging.NLog\ShortCircuit.Logging.NLog.csproj", "{6C1ECD2A-FFCB-42F6-B0E3-929C1F940275}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShortCircuit.Logging.NLog", "ShortCircuit.Logging.NLog\ShortCircuit.Logging.NLog.csproj", "{6C1ECD2A-FFCB-42F6-B0E3-929C1F940275}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShortCircuit.Db", "ShortCircuit.Db\ShortCircuit.Db.csproj", "{5FD17DBB-EF4E-478D-9ECF-DF568D9CA424}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShortCircuit.Db", "ShortCircuit.Db\ShortCircuit.Db.csproj", "{5FD17DBB-EF4E-478D-9ECF-DF568D9CA424}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShortCircuit.Db.Npgsql", "ShortCircuit.Db.Npgsql\ShortCircuit.Db.Npgsql.csproj", "{9EEAF26A-2C83-4749-B6BA-4FECCE346C7C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShortCircuit.Db.Npgsql", "ShortCircuit.Db.Npgsql\ShortCircuit.Db.Npgsql.csproj", "{9EEAF26A-2C83-4749-B6BA-4FECCE346C7C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShortCircuitTest", "Tests\ShortCircuitTest\ShortCircuitTest.csproj", "{FBC2DB4D-C2B2-4770-8ADC-7FB2213D4CF4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShortCircuitTest", "Tests\ShortCircuitTest\ShortCircuitTest.csproj", "{FBC2DB4D-C2B2-4770-8ADC-7FB2213D4CF4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{D12029D7-4DF3-4927-94E8-BF6C402BF026}"
 EndProject
