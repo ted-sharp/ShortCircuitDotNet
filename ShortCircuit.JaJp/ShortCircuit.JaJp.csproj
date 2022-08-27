@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ShotCircuit\ShortCircuit.csproj" />
+  </ItemGroup>
+
 </Project>
