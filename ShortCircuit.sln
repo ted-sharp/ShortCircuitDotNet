@@ -19,6 +19,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShortCircuitTest", "Tests\S
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{D12029D7-4DF3-4927-94E8-BF6C402BF026}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShortCircuit.JaJp", "ShortCircuit.JaJp\ShortCircuit.JaJp.csproj", "{0ACB1E50-DAE4-468C-9F37-6CA87484272F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{FBC2DB4D-C2B2-4770-8ADC-7FB2213D4CF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBC2DB4D-C2B2-4770-8ADC-7FB2213D4CF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FBC2DB4D-C2B2-4770-8ADC-7FB2213D4CF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0ACB1E50-DAE4-468C-9F37-6CA87484272F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ACB1E50-DAE4-468C-9F37-6CA87484272F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ACB1E50-DAE4-468C-9F37-6CA87484272F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ACB1E50-DAE4-468C-9F37-6CA87484272F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

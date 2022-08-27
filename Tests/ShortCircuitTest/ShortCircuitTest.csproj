@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -20,6 +20,7 @@
     <ProjectReference Include="..\..\ShortCircuit.Db.Npgsql\ShortCircuit.Db.Npgsql.csproj" />
     <ProjectReference Include="..\..\ShortCircuit.Db\ShortCircuit.Db.csproj" />
     <ProjectReference Include="..\..\ShortCircuit.FoDicom\ShortCircuit.FoDicom.csproj" />
+    <ProjectReference Include="..\..\ShortCircuit.JaJp\ShortCircuit.JaJp.csproj" />
     <ProjectReference Include="..\..\ShortCircuit.Logging.NLog\ShortCircuit.Logging.NLog.csproj" />
     <ProjectReference Include="..\..\ShortCircuit.Logging\ShortCircuit.Logging.csproj" />
     <ProjectReference Include="..\..\ShotCircuit\ShortCircuit.csproj" />
