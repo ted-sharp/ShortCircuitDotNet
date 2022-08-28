@@ -8,20 +8,7 @@ namespace ShortCircuit.Extensions
 {
     public static class StringExtensionsUtils
     {
-        public static bool IsNullOrEmpty(this string o)
-        {
-            if (o == null)
-            {
-                return true;
-            }
-
-            return o.Length == 0;
-        }
-
-        public static string Or(this string? o, string value)
-        {
-            return o.IsNullOrEmpty() ? value : o;
-        }
+        public static bool IsNullOrEmpty(this string o) => (o == null) || (o.Length == 0);
 
         public static string Left(this string o, int length)
         {
