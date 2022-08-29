@@ -60,6 +60,13 @@ namespace ShortCircuitTest
         }
 
         [Test]
+        public void Paginate_1Page3Items_CountIs3()
+        {
+            IEnumerable<int> enumerable = Enumerable.Range(1, 10);
+            Assert.That(enumerable.Paginate(3, 1).Count(), Is.EqualTo(3));
+        }
+
+        [Test]
         public void ForEach_Sum1to10_Is55()
         {
             int sum = 0;

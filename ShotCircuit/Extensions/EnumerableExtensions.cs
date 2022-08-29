@@ -56,9 +56,13 @@ namespace ShortCircuit.Extensions
         /// </code>
         /// </example>
         public static IEnumerable<T> OrEmpty<T>(this IEnumerable<T>? o)
-        {
-            return o ?? Enumerable.Empty<T>();
-        }
+            => o ?? Enumerable.Empty<T>();
+
+        /// <summary>
+        /// ページに分割して抜き出します。
+        /// </summary>
+        public static IEnumerable<T> Paginate<T>(this IEnumerable<T> o, int pageSize, int pageIndex)
+            => o.Skip(pageSize * (pageIndex - 1)).Take(pageSize);
 
         /// <summary>
         /// それぞれの要素で <see cref="Action{T}"/> を実行します。
