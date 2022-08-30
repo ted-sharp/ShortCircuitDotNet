@@ -17,6 +17,15 @@ namespace ShortCircuit.Extensions
         }
 
         /// <summary>
+        /// その日の 23:59:59:999 を返します。
+        /// </summary>
+        public static DateTime EndOfDay(this DateTime o)
+        {
+            var date = o.Date;
+            return date.AddDays(1).AddTicks(-1);
+        }
+
+        /// <summary>
         /// 月末(28-31日)を返します。
         /// </summary>
         public static DateTime EndOfMonth(this DateTime o)
