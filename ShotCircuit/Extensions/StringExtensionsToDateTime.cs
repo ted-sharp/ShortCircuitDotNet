@@ -11,31 +11,24 @@ namespace ShortCircuit.Extensions.StringExtensionsToDateTime
     {
         #region DateTime
 
+        /// <summary>
+        /// 文字列を <see cref="DateTime"/> に変換を試みます。
+        /// </summary>
         public static bool TryToDateTime(this String o, out DateTime result)
-        {
-            throw new NotImplementedException();
-        }
+            => DateTime.TryParse(o, out result);
 
+        /// <summary>
+        /// 文字列が <see cref="DateTime"/> か判別します。
+        /// </summary>
         public static bool IsDateTime(this String o)
-        {
-            return o.TryToDateTime(out _);
-        }
+            => o.TryToDateTime(out _);
 
+        /// <summary>
+        /// 文字列を <see cref="DateTime"/> に変換します。
+        /// </summary>
         public static DateTime? ToDateTime(this String o)
-        {
-            return o.TryToDateTime(out var result) ? result : null;
-        }
+            => o.TryToDateTime(out var result) ? result : null;
 
         #endregion DateTime
-
-        public static DateOnly ToDateOnly(this String o)
-        {
-            throw new NotImplementedException();
-        }
-
-        public static TimeOnly ToTimeOnly(this String o)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
