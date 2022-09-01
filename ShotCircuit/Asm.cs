@@ -12,5 +12,8 @@ namespace ShortCircuit
 
         public static string Version
             => Assembly.GetEntryAssembly()?.GetName()?.Version?.ToString() ?? "";
+
+        public static string Location
+            => Assembly.GetEntryAssembly()?.Location ?? "";
     }
 }
